@@ -38,7 +38,8 @@ public class TestStack {
 		stack.push(3);
 		stack.push(5);
 		stack.push(7);
-		MyStack3.getAndRemoveLastElement(stack);
+//		MyStack3.getAndRemoveLastElement(stack);
+		MyStack3.reverse(stack);
 	}
 
 }

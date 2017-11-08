@@ -13,5 +13,14 @@ public class MyStack3 {
 				return last;
 			}
 		}
+		public static void reverse(Stack<Integer> stack){
+			if(stack.isEmpty()){
+				return;
+			}
+			int i = getAndRemoveLastElement(stack);
+			reverse(stack);
+			stack.push(i);
+		}
+		
 
 }
