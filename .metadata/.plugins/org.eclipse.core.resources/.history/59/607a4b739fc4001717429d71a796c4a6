@@ -1,0 +1,13 @@
+package stackDemo1;
+
+
+public class TestDogCatQueue {
+
+	public static void main(String[] args) {
+		DogCatQueue queue = new DogCatQueue();
+		queue.add(new Dog());
+		queue.add(new Cat());
+		System.out.println(queue.isEmpty());
+	}
+
+}

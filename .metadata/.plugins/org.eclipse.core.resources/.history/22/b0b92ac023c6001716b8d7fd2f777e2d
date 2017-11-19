@@ -1,0 +1,9 @@
+package linkedListDemo;
+
+public class CreateMaxList {
+	public static  int[] getMaxWindow(int[] arr, int w){
+		
+		return null;
+	}
+
+}

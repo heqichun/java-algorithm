@@ -1,0 +1,37 @@
+package stackDemo;
+
+import java.util.Stack;
+
+public class MyStack2 {
+	private Stack<Integer> stackData,stackMin;
+	public MyStack2(){
+		stackData = new Stack<Integer>();
+		stackMin = new Stack<Integer>();
+	}
+	public void push(Integer i){
+		if(this.stackMin.isEmpty()){
+			this.stackMin.push(i);
+		}else if(i < this.getMin()){
+			this.stackMin.push(i);
+		}else{
+			int item = this.getMin();
+			this.stackMin.push(item);
+		}
+	}
+	
+	public Integer pop(){
+		if(this.stackData.isEmpty()){
+			throw new RuntimeException("Your stack is empty");
+		}
+		this.stackMin.pop();
+		return this.stackData.pop();
+	}
+	
+	public Integer getMin(){
+		if(this.stackMin.isEmpty()){
+			throw new RuntimeException("your stack is empty");
+		}
+		return this.stackMin.peek();
+	}
+
+}

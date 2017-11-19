@@ -1,0 +1,13 @@
+package stackDemo1;
+
+public class PetEnterQueue {
+	private Pet pet;
+	private Long count;
+
+	public PetEnterQueue(Pet pet, Long count) {
+		this.pet = pet;
+		this.count = count;
+	}
+	
+
+}

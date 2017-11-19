@@ -1,0 +1,17 @@
+package stackDemo;
+
+import java.util.Stack;
+
+public class MyStack3 {
+		public static int getAndRemoveLastElement(Stack<Integer> stack){
+			int result = stack.pop();
+			if (stack.isEmpty()) {
+				return result;
+			} else {
+				int last = getAndRemoveLastElement(stack);
+				stack.push(result);
+				return last;
+			}
+		}
+
+}
